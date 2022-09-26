@@ -1,0 +1,196 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: beige;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  gap: 24px;
+  padding: 48px;
+  border: lightslategrey 1px solid;
+  box-shadow: 0 3px 10px lightslategrey;
+}
+
+.container {
+  padding: 36px 24px;
+  border-radius: 2px;
+}
+
+.screen-container {
+  display: flex;
+  background-color: azure;
+  border: lightslategrey solid 1px;
+  gap: 24px;
+}
+
+.screen-container > * {
+  flex-basis: 100%;
+}
+
+.candidate-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidate-picture > img {
+  border: grey solid 1px;
+  max-width: 200px;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-basis: 100%;
+}
+
+.text-field {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.text-field > label {
+  width: 30%;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+.text-field > input {
+  width: 80%;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  padding: 0;
+  margin: 0 4px;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.number-input-container {
+  display: flex;
+  width: 100%;
+}
+
+.number-input-container > input {
+  background-color: transparent;
+  border: dimgrey solid 1px;
+  width: 36px;
+  font-size: 48px;
+  padding: 0;
+  margin: 0 4px;
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.keyboard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  background-color: dimgrey;
+}
+
+.keyboard-button {
+  border: 1px solid lightslategrey;
+  box-shadow: -3px 3px lightslategrey, 0 2px lightslategrey, -1px 1px lightslategrey;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: color 0.1s, background-color 0.1s;
+}
+
+.keyboard-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.keyboard-button:active {
+  background-color: lightslategrey;
+  box-shadow: none;
+  color: white;
+}
+
+.keyboard-button.white {
+  background-color: white;
+  color: black;
+}
+
+.keyboard-button.white:hover {
+  background-color: black;
+  color: white;
+}
+
+.keyboard-button.white:active {
+  background-color: lightslategrey;
+  box-shadow: none;
+  color: white;
+}
+
+.keyboard-button.red {
+  background-color: red;
+}
+
+.keyboard-button.red:hover {
+  background-color: white;
+  color: red;
+}
+
+.keyboard-button.red:active {
+  background-color: lightslategrey;
+  box-shadow: none;
+  color: red;
+}
+
+.keyboard-button.green {
+  background-color: green;
+}
+
+.keyboard-button.green:hover {
+  background-color: white;
+  color: green;
+}
+
+.keyboard-button.green:active {
+  background-color: lightslategrey;
+  box-shadow: none;
+  color: green;
+}
+
+.full-row {
+  grid-column: span 3;
+}
+
+.role-title {
+  text-transform: uppercase;
+}
